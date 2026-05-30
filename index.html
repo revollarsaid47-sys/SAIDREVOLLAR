@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería El Padrino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>🍕 El Padrino</h1>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="menu.html">Ver Menú</a></li>
+                <a href="bebidas.html" class="btn">Ver Bebidas</a>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>La auténtica pizza artesanal</h2>
+            <p>Tradición, sabor y calidad desde hace más de 20 años.</p>
+            <button onclick="verMenu()">Ver Menú</button>
+        </div>
+    </section>
+
+    <section id="historia" class="section">
+        <h2>Nuestra Historia</h2>
+        <p>
+            Pizzería El Padrino nació con la pasión de ofrecer pizzas
+            elaboradas con ingredientes frescos y recetas tradicionales.
+            Desde nuestros inicios hemos compartido momentos especiales
+            con familias y amigos, convirtiéndonos en un referente del
+            sabor auténtico.
+        </p>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Menú</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Pizza Margarita</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP0rliInITJbg_YVkZMx1IuTnXst0YNS_Ftg&s" alt="Pizza Margarita">
+                <p>Tomate, mozzarella y albahaca.</p>
+                <span>S/ 25</span>
+            </div>
+
+            <div class="card">
+                <h3>Pizza Pepperoni</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0N37BGBvFQF8a1WsU5RWRpjS5Ujk_Y5xeTA&s" alt="Pizza Pepperoni">
+                <p>Pepperoni y queso extra.</p>
+                <span>S/ 30</span>
+            </div>
+
+            <div class="card">
+                <h3>Pizza Hawaiana</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6On65MoDz1P4gnbbhXXX2THxuGPeXLhDDgA&s=0" alt="Pizza Hawaiana">
+                <p>Jamón, piña y mozzarella.</p>
+                <span>S/ 32</span>
+            </div>
+
+            <div class="card">
+                <h3>Pizza Suprema</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnBker-1KIfLIUt_YgHcz22nA4kz2xpk9trA&s" alt="Pizza Suprema">
+                <p>Carnes, verduras y queso.</p>
+                <span>S/ 38</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="galeria" class="section">
+        <h2>Galería</h2>
+
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza">
+            <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002" alt="Pizza">
+            <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c" alt="Pizza">
+            <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3" alt="Pizza">
+        </div>
+    </section>
+
+    <section id="contacto" class="section contacto">
+        <h2>Contacto</h2>
+
+        <form id="formulario">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="info">
+            <p>📍 Av. Principal 123</p>
+            <p>📞 +51 999 999 999</p>
+            <p>✉ contacto@elpadrino.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Pizzería El Padrino - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

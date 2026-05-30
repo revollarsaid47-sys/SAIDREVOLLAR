@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pizzería El Padrino - Menú</title>
+
+<style>
+    :root{
+        --beige:#f3ead7;
+        --beige-2:#e7dcc7;
+        --oliva:#6b7a4d;
+        --oliva-dark:#4e5a38;
+        --text:#2f2f2f;
+    }
+
+    body{
+        margin:0;
+        font-family: 'Segoe UI', sans-serif;
+        background:var(--beige);
+        color:var(--text);
+    }
+
+    header{
+        background:var(--oliva-dark);
+        color:var(--beige);
+        text-align:center;
+        padding:35px 15px;
+    }
+
+    header h1{
+        margin:0;
+        font-size:34px;
+        letter-spacing:2px;
+    }
+
+    header p{
+        margin-top:8px;
+        font-size:14px;
+        opacity:0.9;
+    }
+
+    .menu{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+        gap:22px;
+        padding:40px;
+    }
+
+    .card{
+        background:white;
+        border-radius:18px;
+        overflow:hidden;
+        box-shadow:0 10px 25px rgba(0,0,0,0.08);
+        transition:0.3s;
+        border:2px solid transparent;
+        cursor:pointer;
+    }
+
+    .card:hover{
+        transform:translateY(-6px);
+        border:2px solid var(--oliva);
+    }
+
+    .card img{
+        width:100%;
+        height:180px;
+        object-fit:cover;
+    }
+
+    .content{
+        padding:15px;
+    }
+
+    .content h3{
+        margin:0;
+        color:var(--oliva-dark);
+        font-size:18px;
+    }
+
+    .content p{
+        font-size:13px;
+        margin:8px 0;
+        color:#555;
+    }
+
+    .price{
+        font-weight:bold;
+        color:var(--oliva);
+        margin-top:10px;
+    }
+
+    footer{
+        background:var(--oliva-dark);
+        color:var(--beige);
+        text-align:center;
+        padding:18px;
+        margin-top:10px;
+        font-size:13px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Pizzería El Padrino</h1>
+    <p>Auténtico sabor italiano con estilo elegante</p>
+</header>
+
+<section class="menu">
+
+    <div class="card">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVh9iY45UgBcK3MN-zON2vjtPH-fgnIh7GDg&s />
+        <div class="content">
+            <h3>Pizza Margarita</h3>
+            <p>Salsa de tomate, mozzarella fresca y albahaca.</p>
+            <div class="price">S/ 25.00</div>
+        </div>
+    </div>
+
+    <div class="card">
+<img src=https://media.istockphoto.com/id/521403691/es/foto/casera-con-opciones-fr%C3%ADas-y-calientes-y-pizza-de-chorizo.jpg?s=612x612&w=0&k=20&c=e65G7OWoYUXnSWFDRKgt4Ga82vw76RaLUQ1AGvsutJw=
+            <h3>Pizza Pepperoni</h3>
+            <p>Pepperoni clásico con queso mozzarella derretido.</p>
+            <div class="price">S/ 30.00</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnKMvyHCDCT7h2lfBIySG6noFkQNHyQ45qbQ&s />
+        <div class="content">
+            <h3>Pizza Hawaiana</h3>
+            <p>Jamón, piña dulce y queso fundido.</p>
+            <div class="price">S/ 28.00</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbMvHuAoK3bhAAlGCBO3tyV76qDdxvQ2o8XQ&s />
+        <div class="content">
+            <h3>Cuatro Quesos</h3>
+            <p>Mozzarella, parmesano, gorgonzola y cheddar.</p>
+            <div class="price">S/ 32.00</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwdlbrZZ-LIK98gLPWeJyxn-3BOBLRqYXvmg&s=/>
+        <div class="content">
+            <h3>Pizza Suprema</h3>
+            <p>Carne, jamón, champiñones, pimientos y más.</p>
+            <div class="price">S/ 35.00</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqMbrPVmQLJ8St6YcyUcgdmlCf_yB-ztIrgw&s />
+        <div class="content">
+            <h3>Pizza Vegetariana</h3>
+            <p>Verduras frescas con salsa de tomate natural.</p>
+            <div class="price">S/ 27.00</div>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Pizzería El Padrino - Todos los derechos reservados
+</footer>
+
+<script>
+    // Efecto profesional de selección
+    document.querySelectorAll(".card").forEach(card=>{
+        card.addEventListener("click", ()=>{
+            card.style.transform = "scale(1.03)";
+            setTimeout(()=>{
+                card.style.transform = "translateY(-6px)";
+            },200);
+        });
+    });
+</script>
+
+</body>
+</html>

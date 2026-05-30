@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f8f4ed;
+    color:#333;
+}
+
+header{
+    background:#556b2f;
+    padding:15px 50px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1513104890138-7c749659a591')
+    center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.55);
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h2{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero-content button{
+    margin-top:15px;
+    padding:12px 25px;
+    border:none;
+    background:#d4a373;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.section{
+    padding:70px 10%;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:20px;
+    color:#556b2f;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.card span{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+    color:#d4a373;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.contacto form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contacto input,
+.contacto textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contacto button{
+    background:#556b2f;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.info{
+    margin-top:30px;
+}
+
+footer{
+    background:#556b2f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h2{
+        font-size:2rem;
+    }
+
+}

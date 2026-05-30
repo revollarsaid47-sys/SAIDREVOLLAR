@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Padrino - Bebidas</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f0e6; /* beige */
+      color: #3b3b3b;
+    }
+
+    header {
+      background: #556b2f; /* verde oliva */
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin: 0;
+      color: #556b2f;
+    }
+
+    .price {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #8b6f47;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      background: #556b2f;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #6b8e23;
+    }
+
+    #cart {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      background: #8b6f47;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  🍕 El Padrino - Bebidas
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <img src="https://thumbs.dreamstime.com/b/limonada-28180227.jpg" />
+    <div class="card-content">
+      <h3>Limonada</h3>
+      <p class="price">S/ 8.00</p>
+      <button onclick="addToCart('Limonada')">Agregar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6P1bpkgGU-ULZIQg3CwMIPuq9U4fyHAoaBQ&s=0" />
+    <div class="card-content">
+      <h3>Chicha Morada</h3>
+      <p class="price">S/ 7.00</p>
+      <button onclick="addToCart('Chicha Morada')">Agregar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://thumbs.dreamstime.com/b/limonada-28180227.jpg" />
+    <div class="card-content">
+      <h3>Agua con limón</h3>
+      <p class="price">S/ 5.00</p>
+      <button onclick="addToCart('Agua con limón')">Agregar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src=https://media.istockphoto.com/id/497897321/es/foto/t%C3%A9-helado-casero-con-limones.jpg?s=612x612&w=0&k=20&c=BGFAHs6sqWv5jccr18AIJhDkYnb-HfuinkNrpOQm9ww= />
+    <div class="card-content">
+      <h3>Té helado</h3>
+      <p class="price">S/ 6.00</p>
+      <button onclick="addToCart('Té helado')">Agregar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAFYpYAzxyRRY3sL0WrLVp1UQnD2MNlQAATg&s />
+    <div class="card-content">
+      <h3>Gaseosa</h3>
+      <p class="price">S/ 6.00</p>
+      <button onclick="addToCart('Gaseosa')">Agregar</button>
+    </div>
+  </div>
+  
+</div>
+
+<div id="cart">
+  🛒 Carrito: <span id="count">0</span>
+</div>
+
+<script>
+  let count = 0;
+
+  function addToCart(item) {
+    count++;
+    document.getElementById("count").innerText = count;
+    alert(item + " agregado al carrito 🍹");
+  }
+</script>
+
+</body>
+</html>
